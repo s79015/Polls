@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: '3'
 
 services:
@@ -14,4 +15,22 @@ services:
         # volumes:
         #     - ./mysite:/mysite
         # ports:
+=======
+version: '3'
+
+services:
+    python:
+        build: .
+        command: python manage.py runserver 0.0.0.0:8000
+        volumes:
+        - .:/mysite
+        ports:
+        - "8000:8000"
+            # build:
+        #     context: .
+        #     dockerfile: Dockerfile
+        # volumes:
+        #     - ./mysite:/mysite
+        # ports:
+>>>>>>> d8b1465b56e6e1de49e4fa57869c0a9111d69656
         #     - 8000:8000
